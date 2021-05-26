@@ -39,12 +39,12 @@ public class GridManager : MonoBehaviour
                 grid[i, j] = new room(69);
             }
         }
-        HallMonitor();
+        hallMonitor();
         roomSpawner();
 
     }
 
-    void HallMonitor()
+    void hallMonitor()
     {
         (int x, int y) currentLoc = startLoc;
         for (int i = 0; i < roomAmount; i++)
